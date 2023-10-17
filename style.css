@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  width: 736px;
+  height: 512px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -256px 0 0 -368px;
+  background-color: #fff;
+  box-shadow: 10px 10px 45px -10px hsla(0, 0%, 0%, 0.1);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container-left,
+.container-right {
+  width: 368px;
+  height: 512px;
+  position: relative;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 60px;
+}
+
+.container-left {
+  text-align: center;
+  color: white;
+  background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+
+.container-right {
+  background-color: rgb(255, 255, 255);
+}
+
+.your-result {
+  font-size: 24px;
+  opacity: 0.5;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background: linear-gradient(
+    0deg,
+    hsla(241, 72%, 46%, 0),
+    hsla(256, 72%, 46%, 1)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.number-result {
+  font-size: 72px;
+}
+
+.of-100,
+.result-text {
+  opacity: 0.5;
+}
+
+.great {
+  font-size: 30px;
+}
+
+.summary {
+  width: 288px;
+  font-size: 24px;
+  font-weight: 800;
+  color: hsl(224, 30%, 27%);
+}
+
+.category-tab {
+  width: 288px;
+  height: 55px;
+  margin: -20px 0px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.tab-title {
+  display: flex;
+}
+
+.tab-title img {
+  margin-right: 10px;
+}
+
+.tab-title p {
+  font-weight: 700;
+}
+
+#reaction-tab {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+
+#memory-tab {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+
+#verbal-tab {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsla(166, 100%, 37%);
+}
+
+#visual-tab {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+
+.inner-category {
+  display: flex;
+  color: gray;
+}
+
+.inner-category div {
+  padding: 0 2px;
+}
+
+.bold {
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+}
+
+.btn-continue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 288px;
+  height: 55px;
+  border-radius: 28px;
+  color: white;
+  background-color: hsl(224, 30%, 27%);
+}
+
+.attribution {
+  width: 600px;
+  font-size: 16px;
+  position: absolute;
+  text-align: center;
+  top: 95%;
+  left: 50%;
+  margin: 0 0 0 -300px;
+}
+
+.attribution a {
+  font-size: 16px;
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 736px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+  }
+
+  .container {
+    width: 375px;
+    height: 809px;
+    position: static;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 45px -10px hsla(0, 0%, 0%, 0.1);
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-left,
+  .container-right {
+    width: 375px;
+    height: 404.5px;
+    position: relative;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px;
+  }
+
+  .your-result {
+    font-size: 18px;
+    opacity: 0.5;
+  }
+
+  .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background: linear-gradient(
+      0deg,
+      hsla(241, 72%, 46%, 0),
+      hsla(256, 72%, 46%, 1)
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .number-result {
+    font-size: 54px;
+  }
+
+  .of-100,
+  .result-text {
+    opacity: 0.5;
+  }
+
+  .great {
+    font-size: 24px;
+  }
+
+  .summary {
+    width: 288px;
+    font-size: 18px;
+    font-weight: 800;
+    color: hsl(224, 30%, 27%);
+  }
+
+  .category-tab {
+    width: 288px;
+    height: 42px;
+    margin: -20px 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  footer {
+    display: flex;
+  }
+
+  .attribution {
+    text-align: center;
+    width: 200px;
+    font-size: 12px;
+    position: static;
+    margin: 0 auto;
+    padding: 20px 0;
+    justify-self: center;
+  }
+
+  .attribution a {
+    font-size: 12px;
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+  }
+}
