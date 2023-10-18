@@ -7,13 +7,17 @@
   font-weight: 500;
 }
 
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   width: 736px;
   height: 512px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -256px 0 0 -368px;
   background-color: #fff;
   box-shadow: 10px 10px 45px -10px hsla(0, 0%, 0%, 0.1);
   border-radius: 30px;
@@ -107,22 +111,22 @@
   font-weight: 700;
 }
 
-#reaction-tab {
+.reaction {
   background-color: hsla(0, 100%, 67%, 0.1);
   color: hsl(0, 100%, 67%);
 }
 
-#memory-tab {
+.memory {
   background-color: hsla(39, 100%, 56%, 0.1);
   color: hsl(39, 100%, 56%);
 }
 
-#verbal-tab {
+.verbal {
   background-color: hsla(166, 100%, 37%, 0.1);
   color: hsla(166, 100%, 37%);
 }
 
-#visual-tab {
+.visual {
   background-color: hsla(234, 85%, 45%, 0.1);
   color: hsl(234, 85%, 45%);
 }
